@@ -15,7 +15,14 @@
 .button:hover {background-color: #e7e7e7;}
 
 .Div {
-  //border: 5px outset red;
-  //background-color: lightblue;    
+  border: 5px outset red;
+  background-color: lightblue;    
   text-align: center;
+}
+
+.CopyrightDiv {
+  //border: 5px outset red;
+  //background-color: lightblue;     
+  text-align: center;
+  //width: fit-content;
 }
