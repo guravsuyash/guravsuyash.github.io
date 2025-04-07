@@ -570,6 +570,7 @@ section:not(:first-child) {
 
 .hero-content {
     max-width: 600px;
+    min-width: 600px;
 }
 
 .hero h1 {
@@ -975,6 +976,7 @@ section:not(:first-child) {
     .hero-content {
         width: 100%;
         margin-bottom: 2rem;
+        min-width: unset;
     }
 
     .hero-buttons {

@@ -102,4 +102,7 @@ var typed = new Typed(".typing-text", {
 
 $(document).ready(function () {
     $(".typed-cursor").html("");
+    if (window.innerWidth < 768) {
+        $("[data-aos]").attr("data-aos", "fade-up");
+    }
 });
