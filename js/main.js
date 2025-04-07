@@ -89,3 +89,13 @@ document.head.appendChild(style);
 function RedirectTo(links) {
     window.location.href=links;
 }
+
+// <!-- typed js effect starts -->
+var typed = new Typed(".typing-text", {
+    strings: ["System Administrator", "Devops Engineer", "Site Reliability Engineer", "Automating infrastructure and streamlining deployments"],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 500,
+});
+// <!-- typed js effect ends -->
