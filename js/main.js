@@ -99,3 +99,7 @@ var typed = new Typed(".typing-text", {
     backDelay: 500,
 });
 // <!-- typed js effect ends -->
+
+$(document).ready(function () {
+    $(".typed-cursor").html("");
+});
