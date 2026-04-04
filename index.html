@@ -1,457 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suyash Gurav | DevOps Team Lead</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Suyash Gurav | DevOps Engineer L2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav class="navbar">
-        <div class="nav-brand">
-            <i class="fas fa-infinity"></i>
-            <span>SG</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <!-- <span></span>
-            <span></span>
-            <span></span> -->
-            <i class="fa-solid fa-bars"></i>
+        <div class="container nav-flex">
+            <div class="logo">S<span>G</span></div>
+            <ul class="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Tech Stack</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></button></li>
+                <li><a href="#contact" class="cta-nav">Let's Talk</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="terminal-header">
-                <span class="terminal-button"></span>
-                <span class="terminal-button"></span>
-                <span class="terminal-button"></span>
-                <span class="terminal-title">devops@suyash:~$</span>
-            </div>
-            <div class="terminal-body">
-                <p class="terminal-text">Hello, I am</p>
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text" data-aos="fade-right">
+                <span class="status-pill">Available for New Challenges</span>
                 <h1>Suyash Gurav</h1>
-                <h2>DevOps Engineer</h2>
-                <!-- <p>Automating infrastructure and streamlining deployments</p> -->
-                <p class="typing-text" style="min-height: 62px;"></p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn primary"><i class="fas fa-terminal"></i> Get in Touch</a>
-                    <a href="./assets/resume/Resume.pdf" class="btn secondary" download><i class="fas fa-download"></i> Download Resume</a>
+                <h2 class="gradient-text">DevOps Engineer L2 @ Airpay</h2>
+                <p>Architecting reliable cloud platforms, secure payment pipelines, and production-ready automation that moves services from idea to live faster.</p>
+                <div class="hero-btns">
+                    <a href="assets/resume/Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download CV</a>
+                    <a href="#projects" class="btn btn-secondary">See My Work</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="zoom-in">
+                <div class="hero-card">
+                    <img src="assets/images/DevOps workflow illustration.jpg" alt="DevOps workflow illustration">
+                </div>
+                <div class="hero-badges">
+                    <span>Infrastructure as Code</span>
+                    <span>CI/CD & Deployments</span>
+                    <span>Security & Observability</span>
                 </div>
             </div>
         </div>
-        <div>
-            <!-- <img src="assets/images/blur-one.gif" alt="blur-one"> -->
-            <!-- <img src="assets/images/CICD-unscreen.gif" alt="blur-one"> -->
-            <!-- <img src="assets/images/devops.gif" alt="blur-one"> -->
-        </div>
-        <div class="hero-animation">
-            <div class="devops-infinity">
-                <div class="devops-loop"></div>
-            </div>
-        </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I am a passionate DevOps Engineer based in Mumbai, India, specializing in building and optimizing continuous integration and deployment pipelines. With expertise in cloud infrastructure and automation, I help organizations streamline their development processes and achieve operational excellence.</p>
-                <div class="stats">
-                    <div class="stat-item" data-aos="fade-right">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>50+</h3>
-                        <p>CI/CD Pipelines</p>
-                    </div>
-                    <div class="stat-item" data-aos="fade-up">
-                        <i class="fas fa-cloud"></i>
-                        <h3>100+</h3>
-                        <p>Cloud Deployments</p>
-                    </div>
-                    <div class="stat-item" data-aos="fade-left">
-                        <i class="fas fa-server"></i>
-                        <h3>30+</h3>
-                        <p>Infrastructure Projects</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2 class="section-title">Technical Arsenal</h2>
-        <div class="skills-container">
-            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                <div class="skill-header" >
-                    <i class="fas fa-infinity"></i>
-                    <h3>DevOps & CI/CD</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-item">
-                        <i class="fab fa-jenkins"></i>
-                        <span>Jenkins</span>
-                        <div class="skill-level" data-level="95"></div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-git-alt"></i>
-                        <span>Git</span>
-                        <div class="skill-level" data-level="90"></div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-docker"></i>
-                        <span>Docker</span>
-                        <div class="skill-level" data-level="85"></div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-dharmachakra"></i>
-                        <span>Kubernetes</span>
-                        <div class="skill-level" data-level="80"></div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-server"></i>
-                        <span>Nginx</span>
-                        <div class="skill-level" data-level="85"></div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS</span>
-                        <div class="skill-level" data-level="90"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                <div class="skill-header">
-                    <i class="fas fa-database"></i>
-                    <h3>Database Management</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>MySQL</span>
-                        <div class="skill-level" data-level="85"></div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>MongoDB</span>
-                        <div class="skill-level" data-level="80"></div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-sync-alt"></i>
-                        <span>Replication</span>
-                        <div class="skill-level" data-level="75"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                <div class="skill-header">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Security & Performance</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Firewall (CSF)</span>
-                        <div class="skill-level" data-level="85"></div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-tachometer-alt"></i>
-                        <span>Performance Optimization</span>
-                        <div class="skill-level" data-level="90"></div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-balance-scale"></i>
-                        <span>Load Balancing</span>
-                        <div class="skill-level" data-level="85"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <h2 class="section-title">Education</h2>
-        <div class="education-timeline">
-            <div class="education-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="education-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="education-content">
-                    <h3>Master of Science in Computer Science</h3>
-                    <p class="education-school">Chikitsak Samuha's Sir Sitaram & Lady Shantabai, PATKAR VARDE COLLEGE</p>
-                    <p class="education-year">2022 - 2024 | Completed</p>
-                    <ul class="education-details">
-                        <li>Specialized in Cloud Computing and DevOps with experience in deploying and managing applications on AWS/Azure, and proficiency in CI/CD, Docker, Jenkins, and cloud-native tools</li>
-                        <li>Led the university's technical team, overseeing project development, managing team coordination, and guiding members in software development, coding competitions, and tech event planning</li>
-                        <!-- <li>Completed certification in AWS Solutions Architect</li> -->
-                    </ul>
-                </div>
-            </div>
-            <div class="education-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="education-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="education-content">
-                    <h3>Bachelor of Engineering in Computer Science</h3>
-                    <p class="education-school">BHARATIYA VIDYA BHAVAN'S</p>
-                    <p class="education-year">2019 - 2022 | Completed</p>
-                    <ul class="education-details">
-                        <li>Proficient in programming with Python, C++, and JavaScript; strong grasp of data structures, algorithms, operating system concepts, and version control using Git/GitHub</li>
-                        <li>Skilled in database management (SQL and NoSQL), computer networking fundamentals, and basic cybersecurity principles including encryption and authentication</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="education-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="education-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="education-content">
-                    <h3>HSC Science</h3>
-                    <p class="education-school">Shri T P Bhatia College of Science</p>
-                    <p class="education-year">2018 - 2019 | Completed</p>
-                    <ul class="education-details">
-                        <li>Basic programming knowledge in C, C++, and Python, with understanding of algorithms, data structures, OOP concepts, and simple database operations using SQL</li>
-                        <li>Familiarity with computer fundamentals, operating systems, networks, cybersecurity basics, and web development using HTML and CSS</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- <div class="education-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="education-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="education-content">
-                    <h3>Professional Certifications</h3>
-                    <ul class="certification-list">
-                        <li><i class="fab fa-aws"></i> AWS Certified Solutions Architect</li>
-                        <li><i class="fas fa-dharmachakra"></i> Certified Kubernetes Administrator</li>
-                        <li><i class="fab fa-docker"></i> Docker Certified Associate</li>
-                    </ul>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item" data-aos="fade-right">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>DevOps Team Lead</h3>
-                    <p class="company">Support Hives Technology LLP</p>
-                    <p class="period">2025 - Present</p>
-                    <ul>
-                        <li>Leading CI/CD implementation across multiple projects</li>
-                        <li>Optimizing cloud infrastructure and reducing costs by 30%</li>
-                        <li>Implementing security best practices and monitoring solutions</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-left">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>DevOps Engineer</h3>
-                    <p class="company">Support Hives Technology LLP</p>
-                    <p class="period">2024-2025</p>
-                    <ul>
-                        <li>Managed Kubernetes clusters and containerized applications</li>
-                        <li>Implemented automated testing and deployment pipelines</li>
-                        <li>Reduced deployment time by 60% through automation</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>DevOps Intern</h3>
-                        <p class="company">Support Hives Technology LLP</p>
-                        <p class="period">2023</p>
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Professional Path</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <span class="role-date">Jan 2026 - Present</span>
+                        <h3>DevOps Engineer L2</h3>
+                        <p class="company-name">Airpay Payment Services</p>
                         <ul>
-                            <li>Handled infrastructure monitoring and resolved email-related issues to ensure system reliability and uninterrupted communication services.</li>
-                            <li>Assisted in configuring CI/CD pipelines and supported deployment processes across development and staging environments</li>
+                            <li>Scaling Kubernetes infrastructure for payment gateway systems.</li>
+                            <li>Ensuring PCI-DSS and SOC compliance for financial data.</li>
+                            <li>Automating zero-downtime deployments with CI/CD rollbacks.</li>
                         </ul>
                     </div>
                 </div>
-            </div>            
-        </div>
 
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card" data-aos="fade-right" onclick="RedirectTo(`https://gens.life/`)">
-                <div class="project-header">
-                    <i class="fas fa-code-branch"></i>
-                    <h3>GenS Deployment</h3>
-                </div>
-                <p>Set up and managed multi-environment deployment for Laravel, Django, and React applications with automated testing and deployment pipelines.</p>
-                <div class="project-tech">
-                    <span>Laravel</span>
-                    <span>Django</span>
-                    <span>React</span>
-                    <span>Docker</span>
-                    <!-- <span>AWS</span> -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <span class="role-date">Nov 2023 - Jan 2026</span>
+                        <h3>DevOps Team Lead</h3>
+                        <p class="company-name">Support Hives Technology LLP</p>
+                        <ul>
+                            <li>Orchestrated AWS infrastructure using Terraform and Ansible.</li>
+                            <li>Optimized Jenkins pipelines reducing deployment time by 40%.</li>
+                            <li>Managed EKS clusters with Helm for microservices scaling.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="project-card" data-aos="fade-up" onclick="RedirectTo(`https://whatsupgoa.com/`)">
-                <div class="project-header">
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Core Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-box" data-aos="flip-left">
                     <i class="fas fa-cloud"></i>
-                    <h3>WhatsupGoa Deployment</h3>
+                    <h3>Cloud & Ops</h3>
+                    <p>Kubernetes, Docker, AWS, GCP, Terraform, Helm, Ansible</p>
                 </div>
-                <p>Deployed and optimized a high-traffic Django platform with load balancing and automated scaling capabilities.</p>
-                <div class="project-tech">
-                    <span>Django</span>
-                    <span>Nginx</span>
-                    <span>AWS</span>
+                <div class="skill-box" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Observability</h3>
+                    <p>Prometheus, Grafana, ELK Stack, Zabbix</p>
                 </div>
-            </div>
-            <div class="project-card" data-aos="fade-left" onclick="RedirectTo(`https://github.com/guravsuyash/pi-nas-server`)">
-                <div class="project-header">
-                    <i class="fas fa-server"></i>
-                    <h3>NAS on Raspberry Pi</h3>
-                </div>
-                <p>Built an IoT-based Network Attached Storage system with Dockerized services and remote access capabilities.</p>
-                <div class="project-tech">
-                    <span>Docker</span>
-                    <span>IoT</span>
-                    <span>Linux</span>
-                </div>
-            </div>
-            <div class="project-card" data-aos="fade-right">
-                <div class="project-header">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Disaster Management System</h3>
-                </div>
-                <p>Managed and optimized 30 Jenkins jobs on a dedicated server with automated backup and recovery procedures.</p>
-                <div class="project-tech">
-                    <span>Jenkins</span>
-                    <span>Shell</span>
-                    <span>Python</span>
-                </div>
-            </div>
-            <div class="project-card" data-aos="fade-up">
-                <div class="project-header">
-                    <i class="fa-solid fa-lock"></i>
-                    <h3>Self Hosted VPN</h3>
-                </div>
-                <p>A self-hosted OpenVPN on Docker provides a secure, containerized VPN server for private and encrypted remote access. It simplifies deployment, offering flexibility and control over your network traffic.</p>
-                <div class="project-tech">
-                    <span>OpenVPN</span>
-                    <span>Shell</span>
-                    <span>Docker</span>
+                <div class="skill-box" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-shield-virus"></i>
+                    <h3>Security</h3>
+                    <p>PCI-DSS, CSF, Fail2ban, WAF, Load Balancing</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="contact-container">
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always open to discussing new projects, DevOps challenges, or opportunities to improve deployment workflows.</p>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <a href="mailto:guravsuyash12@gmail.com">guravsuyash12@gmail.com</a>
-                        </div>
+    <section id="expertise" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">DevOps, CloudOps & SRE</h2>
+            <div class="project-grid">
+                <article class="project-card" data-aos="fade-up">
+                    <img src="assets/images/Infrastructure as Code.svg" alt="DevOps workflow illustration">
+                    <div class="project-content">
+                        <span>DevOps</span>
+                        <h3>Infrastructure as Code</h3>
+                        <p>Automating build, test, and release pipelines for reliable continuous delivery.</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <a href="tel:8976649616">+91 8976649616</a>
-                        </div>
+                </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/Cloud-native Operations.jpg" alt="CloudOps infrastructure illustration">
+                    <div class="project-content">
+                        <span>CloudOps</span>
+                        <h3>Cloud-native Operations</h3>
+                        <p>Managing scalable cloud environments, autoscaling, and secure day-two operations.</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Mumbai, India</p>
-                        </div>
+                </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/Observability & Reliability.webp" alt="SRE monitoring illustration">
+                    <div class="project-content">
+                        <span>SRE</span>
+                        <h3>Observability & Reliability</h3>
+                        <p>Implementing metrics, alerts, and incident response practices for stable services.</p>
                     </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/guravsuyash" class="social-link" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/suyashgurav" class="social-link" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://x.com/SuyashGurav2" class="social-link" title="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3><i class="fas fa-code-branch"></i> Quick Links</h3>
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Live Projects</h2>
+            <div class="project-grid">
+                <article class="project-card" data-aos="fade-up">
+                    <div class="project-image theme-toggle">
+                        <img class="theme-image light-only" src="assets/images/CI-CD-Pipeline-PowerPoint-Template-Dark.jpg" alt="CI/CD pipeline animation">
+                        <img class="theme-image dark-only" src="assets/images/CI-CD-Pipeline-PowerPoint-Template.jpg" alt="CI/CD pipeline animation">
+                    </div>
+                    <div class="project-content">
+                        <span>Pipeline Automation</span>
+                        <h3>End-to-end CI/CD Workflows</h3>
+                        <p>Built repeatable deployment pipelines using GitHub Actions, Terraform, and Docker for safer, faster releases.</p>
+                    </div>
+                </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/AWS & Kubernetes Orchestration.avif" alt="Cloud infrastructure animation">
+                    <div class="project-content">
+                        <span>Cloud Infrastructure</span>
+                        <h3>AWS & Kubernetes Orchestration</h3>
+                        <p>Designed resilient EKS clusters, secure networking, and autoscaling policies to support transaction-heavy services.</p>
+                    </div>
+                </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/Observability & Alerts_cropped.jpg" alt="Monitoring dashboard illustration">
+                    <div class="project-content">
+                        <span>Monitoring</span>
+                        <h3>Observability & Alerts</h3>
+                        <p>Implemented metrics, logs, and alerting for production stability so issues surface before they impact users.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container resume-section">
+            <h2 class="section-title">Resume Snapshot</h2>
+            <div class="resume-grid">
+                <div class="resume-card" data-aos="fade-up">
+                    <h3>Core Strengths</h3>
+                    <ul>
+                        <li>CI/CD design with Jenkins, GitHub Actions, and Argo CD</li>
+                        <li>Infrastructure automation using Terraform, Ansible, and Helm</li>
+                        <li>Secure cloud architectures for payment systems</li>
+                    </ul>
+                </div>
+                <div class="resume-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Impact Delivered</h3>
+                    <ul>
+                        <li>Reduced deployment windows by 40%</li>
+                        <li>Boosted service availability with self-healing clusters</li>
+                        <li>Aligned delivery with PCI-DSS and operational compliance</li>
+                    </ul>
+                </div>
+                <div class="resume-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>What’s inside</h3>
+                    <ul>
+                        <li>Technical leadership and process ownership</li>
+                        <li>Cloud migration and cost optimization</li>
+                        <li>Automation, monitoring, and incident readiness</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="assets/resume/Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download Full Resume</a>
+                <a href="#contact" class="btn btn-secondary">Message Me</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand" data-aos="fade-up">
+                <h2>Let's build something scalable.</h2>
+                <p>Payments, cloud automation, and observability delivered with reliability-first execution.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/guravsuyash"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/suyashgurav"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:guravsuyash12@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+                <h3>Quick links</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Tech Stack</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3><i class="fas fa-envelope"></i> Contact</h3>
-                <ul>
-                    <li><a href="mailto:guravsuyash12@gmail.com">guravsuyash12@gmail.com</a></li>
-                    <li><a href="tel:8976649616">+91 8976649616</a></li>
-                    <li>Mumbai, India</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3><i class="fas fa-link"></i> Social</h3>
-                <div class="social-links footer-social">
-                    <a href="https://github.com/guravsuyash" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/suyashgurav" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/SuyashGurav2" class="social-link"><i class="fab fa-twitter"></i></a>
-                </div>
+            <div class="footer-contact" data-aos="fade-up" data-aos-delay="200">
+                <h3>Contact</h3>
+                <p>Mumbai, India</p>
+                <p><a href="mailto:guravsuyash12@gmail.com">guravsuyash12@gmail.com</a></p>
+                <p><a href="tel:+918976649616">+91 89766 49616</a></p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Suyash Gurav | DevOps Engineer</p>
-            <div class="footer-stats">
-                <span><i class="fas fa-code-branch"></i> CI/CD Specialist</span>
-                <span><i class="fas fa-cloud"></i> Cloud Architect</span>
-                <span><i class="fas fa-shield-alt"></i> Security Expert</span>
-            </div>
+            <p>&copy; 2026 Suyash Gurav — Cloud native infrastructure, engineered for growth.</p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- typed.js cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
