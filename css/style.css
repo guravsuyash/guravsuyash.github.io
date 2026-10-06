@@ -204,14 +204,16 @@ h1, h2, h3, .logo { font-family: 'Space Grotesk', sans-serif; }
     display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; width: 100%;
 }
 .hero-badges span {
+    min-width: 0;
+    overflow-wrap: anywhere;
     border-radius: 999px; padding: 0.85rem 1rem;
     font-size: 0.88rem; background: rgba(59, 130, 246, 0.12);
     color: var(--primary); text-align: center; font-weight: 700;
     border: 1px solid rgba(59, 130, 246, 0.12);
 }
 
-.section { padding: 7.5rem 0; }
-.section-title { font-size: clamp(2rem, 3vw, 2.75rem); margin-bottom: 3rem; text-align: center; }
+.section { padding: 5rem 0; }
+.section-title { font-size: clamp(2rem, 3vw, 2.75rem); margin-bottom: 2rem; text-align: center; }
 .bg-alt { background: var(--bg-alt); }
 
 /* 3D Cube Animation for DevOps Vibe */
@@ -246,6 +248,7 @@ h1, h2, h3, .logo { font-family: 'Space Grotesk', sans-serif; }
 }
 
 .timeline-item { position: relative; padding-left: 3rem; margin-bottom: 3rem; }
+.timeline-item:last-child { margin-bottom: 0; }
 .timeline-marker {
     position: absolute; left: -6px; top: 0; width: 14px; height: 14px;
     border-radius: 50%; background: var(--primary); border: 3px solid var(--bg);
@@ -363,9 +366,8 @@ footer {
 
 @media (max-width: 1200px) and (min-width: 993px) {
     .hero-card {
-        width: 50%;
-        max-width: 50%;
-        min-width: 320px;
+        width: 100%;
+        max-width: 460px;
     }
     .hero-visual { align-items: center; }
     .hero-btns { justify-content: flex-start; }
@@ -376,7 +378,7 @@ footer {
     .hero-grid { grid-template-columns: 1fr; text-align: center; }
     .hero p { margin: 0 auto 2.5rem; }
     .hero h1 { font-size: 3.5rem; }
-    .hero-card { max-width: 100%; }
+    .hero-card { max-width: 460px; }
     .hero-badges { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.9rem; }
     .hero-badges span { font-size: 0.82rem; padding: 0.75rem 0.9rem; }
     .hero-btns { justify-content: center; }
@@ -390,6 +392,9 @@ footer {
     footer { padding-top: 2rem; }
     .navbar {
         padding: 1rem 0;
+        max-height: 100vh;
+        max-height: 100dvh;
+        overflow-y: auto;
     }
     .nav-flex { flex-wrap: wrap; gap: 0.75rem; }
     .nav-controls { display: flex; align-items: center; gap: 0.5rem; }
